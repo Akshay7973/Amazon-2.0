@@ -20,13 +20,29 @@ function ProductFeed({product}) {
         className="md:col-span-full"
       />
         <div className="md:col-span-2">
-        {product.slice(4, 5).map((product) => (
-          <Product product={product} key={product.id} />
-        ))}
+        {product.slice(4, 5).map(({id,title,price,description,category,image})=>(
+                <Product
+                key={id}
+                id={id}
+                title={title}
+                price={price}
+                description={description}
+                category={category}
+                image={image} 
+                  />
+            ))}
       </div>
-      {product.slice(5, product.length).map((product) => (
-        <Product product={product} key={product.id} />
-      ))}  
+      {product.slice(5, product.length).map(({id,title,price,description,category,image})=>(
+                <Product
+                key={id}
+                id={id}
+                title={title}
+                price={price}
+                description={description}
+                category={category}
+                image={image} 
+                  />
+            ))}
             
         </div>
     )
