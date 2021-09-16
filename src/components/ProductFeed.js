@@ -40,7 +40,8 @@ function ProductFeed({product}) {
                 price={price}
                 description={description}
                 category={category}
-                image={image} 
+                image={image}
+                
                   />
             ))}
             
@@ -49,7 +50,3 @@ function ProductFeed({product}) {
 }
 
 export default ProductFeed;
-// // map((product) => (
-//     <Product product={product} key={product.id} />
-//     ))}
-//           {product.
